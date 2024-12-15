@@ -103,6 +103,13 @@ body {
     margin: 0 auto;
 }
 
+.hero-elipse {
+    max-width: 300px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: calc(var(--spacing-unit) * 6); /* Adicionado espaço entre a elipse e o botão */
+}
+
 .hero h1 {
     font-family: var(--font-heading);
     font-size: 4.5rem;

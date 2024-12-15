@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Música - DJ VOXXX</title>
+    <meta name="description" content="Ouça as últimas músicas e remixes do DJ VOXXX nas principais plataformas de streaming.">
+    
+    <!-- SEO Tags -->
+    <meta property="og:title" content="Música - DJ VOXXX">
+    <meta property="og:description" content="Ouça as últimas músicas e remixes do DJ VOXXX nas principais plataformas de streaming.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://djvoxxx.com/musica">
+    
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Estilos -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/music.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <img src="logo.svg" alt="DJ VOXXX Logo" width="150" height="50">
+            </a>
+            
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="musica.html" class="active">Música</a></li>
+                    <li><a href="agenda.html">Agenda</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+            
+            <div class="social-links">
+                <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Spotify">
+                    <i class="fab fa-spotify"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="music-hero">
+            <div class="container">
+                <h1 class="animate-on-scroll">Música</h1>
+            </div>
+        </section>
+
+        <section class="music-releases">
+            <div class="container">
+                <h2 class="animate-on-scroll">Lançamentos</h2>
+                <div class="releases-grid">
+                    <!-- Álbum 1 -->
+                    <div class="release-card animate-on-scroll">
+                        <div class="release-cover">
+                            <img src="assets/images/album1.jpg" alt="Álbum 1" width="300" height="300">
+                        </div>
+                        <div class="release-info">
+                            <h3>Neon Dreams</h3>
+                            <p class="release-year">2024</p>
+                            <div class="release-links">
+                                <a href="#" class="stream-button spotify">
+                                    <i class="fab fa-spotify"></i> Spotify
+                                </a>
+                                <a href="#" class="stream-button apple">
+                                    <i class="fab fa-apple"></i> Apple Music
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Álbum 2 -->
+                    <div class="release-card animate-on-scroll">
+                        <div class="release-cover">
+                            <img src="assets/images/album2.jpg" alt="Álbum 2" width="300" height="300">
+                        </div>
+                        <div class="release-info">
+                            <h3>Electric Pulse</h3>
+                            <p class="release-year">2023</p>
+                            <div class="release-links">
+                                <a href="#" class="stream-button spotify">
+                                    <i class="fab fa-spotify"></i> Spotify
+                                </a>
+                                <a href="#" class="stream-button apple">
+                                    <i class="fab fa-apple"></i> Apple Music
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Álbum 3 -->
+                    <div class="release-card animate-on-scroll">
+                        <div class="release-cover">
+                            <img src="assets/images/album3.jpg" alt="Álbum 3" width="300" height="300">
+                        </div>
+                        <div class="release-info">
+                            <h3>Midnight Groove</h3>
+                            <p class="release-year">2023</p>
+                            <div class="release-links">
+                                <a href="#" class="stream-button spotify">
+                                    <i class="fab fa-spotify"></i> Spotify
+                                </a>
+                                <a href="#" class="stream-button apple">
+                                    <i class="fab fa-apple"></i> Apple Music
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured-playlists">
+            <div class="container">
+                <h2 class="animate-on-scroll">Playlists em Destaque</h2>
+                <div class="playlists-grid">
+                    <div class="playlist-embed animate-on-scroll">
+                        <!-- Spotify Embed -->
+                        <iframe src="https://open.spotify.com/embed/playlist/PLAYLIST_ID" 
+                                width="100%" 
+                                height="380" 
+                                frameborder="0" 
+                                allowtransparency="true" 
+                                allow="encrypted-media">
+                        </iframe>
+                    </div>
+                    <div class="playlist-embed animate-on-scroll">
+                        <!-- Apple Music Embed -->
+                        <iframe allow="autoplay *; encrypted-media *;" 
+                                frameborder="0" 
+                                height="380" 
+                                style="width:100%;overflow:hidden;background:transparent;" 
+                                sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" 
+                                src="https://embed.music.apple.com/br/playlist/PLAYLIST_ID">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="musica.html">Música</a></li>
+                    <li><a href="agenda.html">Agenda</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-social">
+                <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Spotify">
+                    <i class="fab fa-spotify"></i>
+                </a>
+            </div>
+            
+            <div class="footer-legal">
+                <p>&copy; 2024 DJ VOXXX. Todos os direitos reservados.</p>
+                <a href="privacidade.html">Política de Privacidade</a>
+                <a href="termos.html">Termos de Uso</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/analytics.js"></script>
+</body>
+</html>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - DJ VOXXX</title>
+    <meta name="description" content="Entre em contato com DJ VOXXX para shows, parcerias e mais informações.">
+    
+    <!-- SEO Tags -->
+    <meta property="og:title" content="Contato - DJ VOXXX">
+    <meta property="og:description" content="Entre em contato com DJ VOXXX para shows, parcerias e mais informações.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://djvoxxx.com/contato">
+    
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Estilos -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/contact.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <img src="logo.svg" alt="DJ VOXXX Logo" width="150" height="50">
+            </a>
+            
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="musica.html">Música</a></li>
+                    <li><a href="agenda.html">Agenda</a></li>
+                    <li><a href="contato.html" class="active">Contato</a></li>
+                </ul>
+            </nav>
+            
+            <div class="social-links">
+                <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Spotify">
+                    <i class="fab fa-spotify"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="contact-hero">
+            <div class="container">
+                <h1 class="animate-on-scroll">Contato</h1>
+            </div>
+        </section>
+
+        <section class="contact-content">
+            <div class="container">
+                <div class="contact-grid">
+                    <!-- Informações de Contato -->
+                    <div class="contact-info animate-on-scroll">
+                        <h2>Informações de Contato</h2>
+                        <div class="info-items">
+                            <div class="info-item">
+                                <i class="fas fa-envelope"></i>
+                                <div class="info-text">
+                                    <h3>E-mail</h3>
+                                    <p>contato@djvoxxx.com</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-phone"></i>
+                                <div class="info-text">
+                                    <h3>Telefone</h3>
+                                    <p>+55 (11) 99999-9999</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-building"></i>
+                                <div class="info-text">
+                                    <h3>Empresarial</h3>
+                                    <p>VOXXX Entertainment LTDA</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="social-contact">
+                            <h3>Redes Sociais</h3>
+                            <div class="social-grid">
+                                <a href="#" class="social-item" target="_blank" rel="noopener noreferrer">
+                                    <i class="fab fa-instagram"></i>
+                                    <span>@djvoxxx</span>
+                                </a>
+                                <a href="#" class="social-item" target="_blank" rel="noopener noreferrer">
+                                    <i class="fab fa-facebook"></i>
+                                    <span>DJ VOXXX Official</span>
+                                </a>
+                                <a href="#" class="social-item" target="_blank" rel="noopener noreferrer">
+                                    <i class="fab fa-youtube"></i>
+                                    <span>DJ VOXXX</span>
+                                </a>
+                                <a href="#" class="social-item" target="_blank" rel="noopener noreferrer">
+                                    <i class="fab fa-spotify"></i>
+                                    <span>DJ VOXXX</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Formulário de Contato -->
+                    <div class="contact-form animate-on-scroll">
+                        <h2>Envie uma Mensagem</h2>
+                        <form id="contact-form" action="#" method="POST" novalidate>
+                            <div class="form-group">
+                                <label for="name">Nome</label>
+                                <input type="text" id="name" name="name" required 
+                                       minlength="3" placeholder="Seu nome completo">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">E-mail</label>
+                                <input type="email" id="email" name="email" required 
+                                       placeholder="seu@email.com">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject">Assunto</label>
+                                <select id="subject" name="subject" required>
+                                    <option value="">Selecione um assunto</option>
+                                    <option value="shows">Contratação para Shows</option>
+                                    <option value="press">Imprensa</option>
+                                    <option value="partnership">Parcerias</option>
+                                    <option value="other">Outro</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Mensagem</label>
+                                <textarea id="message" name="message" rows="5" required 
+                                          minlength="10" placeholder="Digite sua mensagem aqui..."></textarea>
+                            </div>
+                            
+                            <button type="submit" class="submit-button">
+                                Enviar Mensagem
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="musica.html">Música</a></li>
+                    <li><a href="agenda.html">Agenda</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-social">
+                <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Spotify">
+                    <i class="fab fa-spotify"></i>
+                </a>
+            </div>
+            
+            <div class="footer-legal">
+                <p>&copy; 2024 DJ VOXXX. Todos os direitos reservados.</p>
+                <a href="privacidade.html">Política de Privacidade</a>
+                <a href="termos.html">Termos de Uso</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/analytics.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+/* Reset CSS */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    min-height: 100vh;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+/* Remove outline for non-keyboard interactions */
+:focus:not(:focus-visible) {
+    outline: none;
+}
+
+/* Preserve outline for keyboard interactions */
+:focus-visible {
+    outline: 2px solid var(--color-neon-purple);
+    outline-offset: 2px;
+}
+
+/* Melhor suporte para imagens */
+img {
+    height: auto;
+    vertical-align: middle;
+}
+
+/* Melhor suporte para vídeos responsivos */
+video {
+    width: 100%;
+    height: auto;
+}
+
+/* Remover gap padrão do iframe */
+iframe {
+    border: 0;
+    display: block;
+}
+
+/* Remover aparência padrão em dispositivos móveis */
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="password"],
+textarea {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+/* Corrigir inconsistências de fonte em iOS */
+input,
+textarea,
+button,
+select {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+/* Remover decoração de links em dispositivos móveis */
+a:active,
+a:hover {
+    outline: 0;
+}
+
+/* Garantir que elementos ocultos estejam realmente ocultos */
+[hidden] {
+    display: none !important;
+}

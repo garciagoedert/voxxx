@@ -1,0 +1,195 @@
+/* Music Page Styles */
+.music-hero {
+    position: relative;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: var(--header-height);
+    background-image: url('../assets/images/background-image.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.music-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        135deg,
+        var(--color-primary-dark) 0%,
+        rgba(30, 30, 30, 0.8) 60%,
+        rgba(45, 45, 45, 0.7) 100%
+    );
+    opacity: 0.9;
+}
+
+.music-hero h1 {
+    position: relative;
+    font-family: var(--font-heading);
+    font-size: 4rem;
+    color: var(--color-text-primary);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+/* Music Releases Section */
+.music-releases {
+    padding: calc(var(--spacing-unit) * 12) 0;
+    background-color: var(--color-surface);
+}
+
+.music-releases h2 {
+    text-align: center;
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
+    margin-bottom: calc(var(--spacing-unit) * 8);
+    color: var(--color-text-primary);
+    text-transform: uppercase;
+}
+
+.releases-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: calc(var(--spacing-unit) * 4);
+}
+
+.release-card {
+    background-color: var(--color-surface-light);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: var(--elevation-2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.release-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--elevation-4);
+}
+
+.release-cover {
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%;
+    overflow: hidden;
+}
+
+.release-cover img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.release-card:hover .release-cover img {
+    transform: scale(1.05);
+}
+
+.release-info {
+    padding: calc(var(--spacing-unit) * 3);
+}
+
+.release-info h3 {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    color: var(--color-text-primary);
+    margin-bottom: calc(var(--spacing-unit));
+}
+
+.release-year {
+    color: var(--color-text-secondary);
+    font-size: 0.9rem;
+    margin-bottom: calc(var(--spacing-unit) * 2);
+}
+
+.release-links {
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--spacing-unit) * 2);
+}
+
+/* Featured Playlists Section */
+.featured-playlists {
+    padding: calc(var(--spacing-unit) * 12) 0;
+    background-color: var(--color-background);
+    position: relative;
+}
+
+.featured-playlists::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(
+        circle at center,
+        var(--color-primary-dark) 0%,
+        transparent 70%
+    );
+    opacity: 0.05;
+    pointer-events: none;
+}
+
+.featured-playlists h2 {
+    text-align: center;
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
+    margin-bottom: calc(var(--spacing-unit) * 8);
+    color: var(--color-text-primary);
+    text-transform: uppercase;
+}
+
+.playlists-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: calc(var(--spacing-unit) * 4);
+}
+
+.playlist-embed {
+    background-color: var(--color-surface);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: var(--elevation-2);
+    transition: transform 0.3s ease;
+}
+
+.playlist-embed:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--elevation-3);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .music-hero {
+        height: 300px;
+    }
+
+    .music-hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .releases-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .playlists-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .release-card {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+}

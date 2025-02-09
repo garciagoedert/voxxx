@@ -104,10 +104,8 @@
 }
 
 .social-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: calc(var(--spacing-unit) * 2);
-    max-width: 200px;
+    display: flex;
+    justify-content: center;
     margin: 0 auto;
 }
 
@@ -213,11 +211,6 @@
         grid-column: 1 / -1;
         order: -1;
     }
-
-    .social-grid {
-        grid-template-columns: repeat(4, 1fr);
-        max-width: 100%;
-    }
 }
 
 @media (max-width: 768px) {
@@ -253,8 +246,6 @@
     }
 
     .social-grid {
-        grid-template-columns: repeat(4, 1fr);
-        max-width: 240px;
         margin: 0 auto;
     }
 
